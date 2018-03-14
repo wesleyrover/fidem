@@ -1,0 +1,12 @@
+<app-heard></app-heard>
+<router-outlet></router-outlet>
+<div style="text-align:center">
+New Feature: Next generation Firestore (Beta) Realtime DB
+<br>
+(Pulling data from User Collection)
+<ul>
+  <li class="text" style="display:unset" *ngFor="let item of itens | async">
+    1.{{item.nome}}
+  </li>
+</ul>
+</div>
