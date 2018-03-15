@@ -17,6 +17,7 @@ export class AppComponent {
   constructor(public afAuth: AngularFireAuth, private db: AngularFirestore) {
     this.afAuth.auth.signInAnonymously();
     this.user = this.afAuth.authState;
-    this.items = db.collection('items').valueChanges();
+    this.items = db.collection('itens').valueChanges();
+    console.log(this.items);
   }
 }
