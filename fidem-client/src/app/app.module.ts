@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Directive , Injectable} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule  } from '@angular/http';
+import { RouterModule, Router } from '@angular/router';
 import { AngularFireModule } from 'angularfire2';
 import { FirebaseConfig } from '../environments/firebase.config';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
-import { RouterModule, Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeardComponent, MenuComponent, TopoComponent, AjudaComponent, LoginComponent } from './views/index';
@@ -27,11 +27,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HeardComponent,
-    MenuComponent,
-    TopoComponent,
-    LoginComponent,
-    AjudaComponent,
     RoutingComponents
   ],
   imports: [
@@ -41,7 +36,8 @@ export const firebaseConfig = {
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFireDatabaseModule,
-    Routing, RouterModule
+    Routing,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
