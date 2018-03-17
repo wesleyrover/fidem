@@ -12,6 +12,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { HeardComponent, MenuComponent, TopoComponent, AjudaComponent, LoginComponent } from './views/index';
 import { RoutingComponents, Routing } from './app.routing';
+import { GerarComponent } from './views/gerar/gerar.component';
 
 
 export const firebaseConfig = {
@@ -27,7 +28,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    RoutingComponents
+    RoutingComponents,
+    GerarComponent
   ],
   imports: [
     BrowserModule,

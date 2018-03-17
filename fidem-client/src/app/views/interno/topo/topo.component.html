@@ -6,21 +6,28 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/ajuda">Ajuda</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Fidem
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/gerar">Gerar</a>
+            <a class="dropdown-item" href="#">Pendente(s)</a>
+            <a class="dropdown-item" href="#">Bonificação</a>
+            <a class="dropdown-item" href="#">Ativar Bonificação</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Sobre
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Contato</a>
+            <a class="dropdown-item" routerLink="/ajuda">Ajuda</a>
+            <a class="dropdown-item" href="#">Relatar Erro</a>
+            <a class="dropdown-item" href="#">Cadastrar Cliente</a>
+            <a class="dropdown-item" href="#">Esqueci Senha</a>
+            <a class="dropdown-item" href="#">Alterar Senha</a>
           </div>
         </li>
         <li class="nav-item">
