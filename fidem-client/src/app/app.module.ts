@@ -10,9 +10,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
-import { HeardComponent, MenuComponent, TopoComponent, AjudaComponent, LoginComponent } from './views/index';
+import { HeardComponent, MenuComponent, TopoComponent, AjudaComponent, LoginComponent, GerarComponent } from './views/index';
 import { RoutingComponents, Routing } from './app.routing';
-import { GerarComponent } from './views/gerar/gerar.component';
 
 
 export const firebaseConfig = {
@@ -28,8 +27,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    RoutingComponents,
-    GerarComponent
+    RoutingComponents
   ],
   imports: [
     BrowserModule,

@@ -3,3 +3,13 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
 }
+/* You can add global styles to this file, and also import other style files */
+.body {
+    background-color: #4695D1 !important;
+}
+.btn-outline-success {
+    color: #F9C146 !important;
+    background-color: transparent;
+    background-image: none; 
+    border-color: #F9C146 !important;
+}
