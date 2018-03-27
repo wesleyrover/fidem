@@ -1,5 +1,7 @@
 <app-heard></app-heard>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
 <ul>
   <li class="text" style="display:unset" *ngFor="let item of items | async">
     1.{{item.nome}}

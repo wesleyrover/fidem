@@ -2,3 +2,13 @@
 .body {
     background-color: #4695D1 !important;
 }
+
+.btn-fidem {
+    color: black;
+    border-color: black !important;
+}
+.btn-fidem:hover {
+    color:black;
+    background-color:#F9C146;
+    border-color:#F9C146
+}

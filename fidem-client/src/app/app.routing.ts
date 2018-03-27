@@ -16,4 +16,4 @@ export const Routing = RouterModule.forRoot(appRoutes, { useHash: true });
 
 export const RoutingComponents = [ LoginComponent, AjudaComponent, HeardComponent,
                                    TopoComponent, MenuComponent, GerarComponent,
-                                   BonificacaoComponent, ServicoComponent];
+                                   BonificacaoComponent, ServicoComponent, SituacaoComponent];
