@@ -10,7 +10,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
-import { RoutingComponents, Routing } from './app.routing';
+import { RoutingComponents, Routing, RoutingComponentTerceiro } from './app.routing';
 import { FidemComponent } from './views/fidem/fidem.component';
 
 export const firebaseConfig = {
@@ -37,7 +37,8 @@ export const firebaseConfig = {
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFireDatabaseModule,
     Routing,
-    HttpModule
+    HttpModule,
+    RoutingComponentTerceiro
   ],
   providers: [],
   bootstrap: [AppComponent]
